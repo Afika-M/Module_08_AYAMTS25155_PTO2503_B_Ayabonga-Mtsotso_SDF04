@@ -1,27 +1,21 @@
+/*basic styling*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: black
 }
-.footer{
-    background-color: #313131;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+/*footer styling*/
 .container{
     display: flex;
     justify-content: center;
     background-color: #659f8f;
-    margin: 50px;
-    padding: 20px;
 }
 div{
     margin: 20px;
     padding: 20px;
+    width: 100%;
 }
 
   /* Form Styling */
@@ -66,3 +60,19 @@ div{
   
   form button:hover {
     background-color: #55B76F;}
+
+ a:hover{
+    color: #f16a2c;
+    text-decoration: none;
+    transition: color 0.3s ease;}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    div {
+        width: 90%;
+    }
+}
