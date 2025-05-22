@@ -49,3 +49,5 @@ This project will solidify your **CSS layout and responsiveness skills**, prepar
 ### **Congrats on Completing Your First Responsive Footer!**  
 
 You’ve just built a **fully responsive website footer** using **pure HTML & CSS**! Every front-end developer needs to master **layout and styling**, and this challenge is a major step forward. Keep experimenting, refining, and building. **Well done!**
+
+/* 
