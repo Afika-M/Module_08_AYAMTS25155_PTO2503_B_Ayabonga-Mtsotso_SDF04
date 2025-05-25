@@ -2,27 +2,35 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: black
+    color: darkslategray
 }
 /*footer styling*/
-.container{
+.container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 40px;
     background-color: #659f8f;
+    padding: 50px;
 }
-div{
-    margin: 20px;
-    padding: 20px;
-    width: 100%;
+.container h2, .container h3 {
+    white-space: nowrap;
+    margin-bottom: 15x;
+}
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 30px;
+    white-space: nowrap;
 }
 
   /* Form Styling */
   form {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
   }
   
   form label {
@@ -38,12 +46,12 @@ div{
     font-size: 1rem;
     width: 100%;
     background-color: #F4F4F4; 
+    flex: 1 1 250px;
   }
   
   form input:focus,
   form textarea:focus {
-    outline: none;
-    border-color: #55B76F;
+    border-color: #0c0d0c;
     box-shadow: 0 0 5px #c7f3d3;
   }
   
@@ -51,28 +59,44 @@ div{
     background-color: #f16a2c;
     color: white;
     padding: 10px 16px;
+    margin-left: 5px;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    align-self: flex-start;
   }
-  
   form button:hover {
-    background-color: #55B76F;}
+    background-color: #55B76F;
+}
 
- a:hover{
+ a:hover {
     color: #f16a2c;
     text-decoration: none;
     transition: color 0.3s ease;}
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/*Responsive Design*/
+@media (max-width: 1024px) {
     .container {
         flex-direction: column;
-        align-items: center;
-    }
-    div {
-        width: 90%;
+        align-items: flex-start;
     }
 }
+@media (max-width: 767px){
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    form button {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
